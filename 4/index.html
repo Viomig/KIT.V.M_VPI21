@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="fetch.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=devise-width, initial-scale=1" />
+    <title>users</title>
+  </head>
+
+  <body style="background-color: gray;">
+    <div style="text-align:center;" class="container">
+      <button type="button" onclick="loading()" class="btn btn-dark">
+        Download
+      </button>
+      <h2 id="lod"></h2>
+    </div>
+    <div id="disp" style="display: none">
+      <div class="card-group">
+        <div class="card text-white bg-dark" style="width: 15rem;">
+          <img src="" class="card-img-top" id="avatar0" />
+          <div class="card-body">
+            <div>
+              <p>Gender: <span id="gender0"></span></p>
+            </div>
+            <div>
+              <p>Name: <span id="name0"></span></p>
+            </div>
+            <div>
+              <p>E-mail: <span id="email0"></span></p>
+            </div>
+            <div>
+              <p>Addres: <span id="addres0"></span></p>
+            </div>
+            <div>
+              <p>Age: <span id="age0"></span></p>
+            </div>
+            <div>
+              <p>Phone: <span id="phone0"></span></p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 1 -->
+        <div class="card text-white bg-dark" style="width: 15rem;">
+          <img src="" class="card-img-top" id="avatar1" />
+          <div class="card-body">
+            <div>
+              <p>Gender: <span id="gender1"></span></p>
+            </div>
+            <div>
+              <p>Name: <span id="name1"></span></p>
+            </div>
+            <div>
+              <p>E-mail: <span id="email1"></span></p>
+            </div>
+            <div>
+              <p>Addres: <span id="addres1"></span></p>
+            </div>
+            <div>
+              <p>Age: <span id="age1"></span></p>
+            </div>
+            <div>
+              <p>Phone: <span id="phone1"></span></p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card text-white bg-dark" style="width: 15rem;">
+          <img src="" class="card-img-top" id="avatar2" />
+          <div class="card-body">
+            <div>
+              <p>Gender: <span id="gender2"></span></p>
+            </div>
+            <div>
+              <p>Name: <span id="name2"></span></p>
+            </div>
+            <div>
+              <p>E-mail: <span id="email2"></span></p>
+            </div>
+            <div>
+              <p>Addres: <span id="addres2"></span></p>
+            </div>
+            <div>
+              <p>Age: <span id="age2"></span></p>
+            </div>
+            <div>
+              <p>Phone: <span id="phone2"></span></p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card text-white bg-dark" style="width: 15rem;">
+          <img src="" class="card-img-top" id="avatar3" />
+          <div class="card-body">
+            <div>
+              <p>Gender: <span id="gender3"></span></p>
+            </div>
+            <div>
+              <p>Name: <span id="name3"></span></p>
+            </div>
+            <div>
+              <p>E-mail: <span id="email3"></span></p>
+            </div>
+            <div>
+              <p>Addres: <span id="addres3"></span></p>
+            </div>
+            <div>
+              <p>Age: <span id="age3"></span></p>
+            </div>
+            <div>
+              <p>Phone: <span id="phone3"></span></p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card text-white bg-dark" style="width: 15rem;">
+          <img src="" class="card-img-top" id="avatar4" />
+          <div class="card-body">
+            <div>
+              <p>Gender: <span id="gender4"></span></p>
+            </div>
+            <div>
+              <p>Name: <span id="name4"></span></p>
+            </div>
+            <div>
+              <p>E-mail: <span id="email4"></span></p>
+            </div>
+            <div>
+              <p>Addres: <span id="addres4"></span></p>
+            </div>
+            <div>
+              <p>Age: <span id="age4"></span></p>
+            </div>
+            <div>
+              <p>Phone: <span id="phone4"></span></p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="w-100"></div>
+        <div class="card text-white bg-dark" style="width: 15rem;">
+          <img src="" class="card-img-top" id="avatar5" />
+          <div class="card-body">
+            <div>
+              <p>Gender: <span id="gender5"></span></p>
+            </div>
+            <div>
+              <p>Name: <span id="name5"></span></p>
+            </div>
+            <div>
+              <p>E-mail: <span id="email5"></span></p>
+            </div>
+            <div>
+              <p>Addres: <span id="addres5"></span></p>
+            </div>
+            <div>
+              <p>Age: <span id="age5"></span></p>
+            </div>
+            <div>
+              <p>Phone: <span id="phone5"></span></p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="card text-white bg-dark" style="width: 15rem;">
+          <img src="" class="card-img-top" id="avatar6" />
+          <div class="card-body">
+            <div>
+              <p>Gender: <span id="gender6"></span></p>
+            </div>
+            <div>
+              <p>Name: <span id="name6"></span></p>
+            </div>
+            <div>
+              <p>E-mail: <span id="email6"></span></p>
+            </div>
+            <div>
+              <p>Addres: <span id="addres6"></span></p>
+            </div>
+            <div>
+              <p>Age: <span id="age6"></span></p>
+            </div>
+            <div>
+              <p>Phone: <span id="phone6"></span></p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="card text-white bg-dark" style="width: 15rem;">
+          <img src="" class="card-img-top" id="avatar7" />
+          <div class="card-body">
+            <div>
+              <p>Gender: <span id="gender7"></span></p>
+            </div>
+            <div>
+              <p>Name: <span id="name7"></span></p>
+            </div>
+            <div>
+              <p>E-mail: <span id="email7"></span></p>
+            </div>
+            <div>
+              <p>Addres: <span id="addres7"></span></p>
+            </div>
+            <div>
+              <p>Age: <span id="age7"></span></p>
+            </div>
+            <div>
+              <p>Phone: <span id="phone7"></span></p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="card text-white bg-dark" style="width: 15rem;">
+          <img src="" class="card-img-top" id="avatar8" />
+          <div class="card-body">
+            <div>
+              <p>Gender: <span id="gender8"></span></p>
+            </div>
+            <div>
+              <p>Name: <span id="name8"></span></p>
+            </div>
+            <div>
+              <p>E-mail: <span id="email8"></span></p>
+            </div>
+            <div>
+              <p>Addres: <span id="addres8"></span></p>
+            </div>
+            <div>
+              <p>Age: <span id="age8"></span></p>
+            </div>
+            <div>
+              <p>Phone: <span id="phone8"></span></p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="card text-white bg-dark" style="width: 15rem;">
+          <img src="" class="card-img-top" id="avatar9" />
+          <div class="card-body">
+            <div>
+              <p>Gender: <span id="gender9"></span></p>
+            </div>
+            <div>
+              <p>Name: <span id="name9"></span></p>
+            </div>
+            <div>
+              <p>E-mail: <span id="email9"></span></p>
+            </div>
+            <div>
+              <p>Addres: <span id="addres9"></span></p>
+            </div>
+            <div>
+              <p>Age: <span id="age9"></span></p>
+            </div>
+            <div>
+              <p>Phone: <span id="phone9"></span></p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 10 -->
+      </div>
+    </div>
+    <!-- disp -->
+  </body>
+</html>
