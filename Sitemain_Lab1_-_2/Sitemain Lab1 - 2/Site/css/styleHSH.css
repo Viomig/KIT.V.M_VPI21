@@ -1,0 +1,182 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+/*Global styles*/
+*,
+*::before,
+*::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root{
+  --main-font: 'Source Sans Pro', sans-serif;
+  --secondary-font: 'Herr Von Muellerhoff', italic;
+  --body-font: 'Cabin', sans-serif;
+  --h1-font: 'Didact Gothic';
+  --main-font-color-dark: #252525;
+  --secondary-font-color: #c59d5f;
+  --body-font-color: #515151;
+}
+html{
+  font-family: var(--body-font--);
+  font-size: 10px;
+  color: var(--body-font-color);
+  scroll-behavior: smooth;
+}
+section{
+  padding: 0 0;
+}
+img{
+  width: 100%;
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+}
+h1{
+  font-family: var(--h1-font);
+}
+p{
+  font-size: 1.9rem;
+}
+.container{
+  max-width: 1800px;
+  margin: 10px auto;
+  width: 100%;
+  padding: 0 2.4rem;
+}
+.first-letter{
+  font-size: 50px;
+  color: #f8d57e;
+}
+.headline{
+  font-size: 40px;
+  color: #f8d57e;
+}
+.first-letter-2{
+  font-size: 25px;
+  color: #f8d57e;
+}
+.headline-2{
+  font-size: 15px;
+  color: #f8d57e;
+}
+
+
+/*header*/
+
+header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.nav{
+margin-top: 20px;
+}
+.nav-list a{
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  z-index: 100;
+  display: inline-block;
+  text-align: center;
+}
+.nav-list .animation{
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  background: #d0e6a5;
+  border-radius: 8px;
+  transition: all .5s ease 0s;
+}
+.nav-list a:nth-child(1){
+  width: 150px;
+}
+.nav-list .nachalo-Home,a:nth-child(1):hover~.animation{
+  width: 150px;
+  left: 0;
+}
+.nav-list a:nth-child(2){
+  width: 150px;
+}
+.nav-list .nachalo-Menu,a:nth-child(2):hover~.animation{
+  width: 150px;
+  left: 150px;
+}
+.nav-list a:nth-child(3){
+  width: 150px;
+}
+.nav-list .nachalo-About,a:nth-child(3):hover~.animation{
+  width: 150px;
+  left: 300px;
+}
+.nav-list a:nth-child(4){
+  width: 150px;
+}
+.nav-list .nachalo-Product,a:nth-child(4):hover~.animation{
+  width: 150px;
+  left: 450px;
+}
+.nav-list a:nth-child(5){
+  width: 150px;
+}
+.nav-list .nachalo-Contact,a:nth-child(5):hover~.animation{
+  width: 150px;
+  left: 600px;
+}
+.nav-list{
+  background: rgba(39,45,51,0.85);
+  text-align: justify;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-radius: 9px;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+.twohero{
+  display: flex;
+  justify-content: space-between;
+  background: #d0e6a5;
+}
+.hero{
+  width: 83%;
+  min-height: 100vh;
+  background: url('C:/Sitemain/Site/imgHSH/Main.jpg') center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.hero-2{
+  width: 15%;
+  min-height: 20vh;
+  background: rgba(39,45,51,0.85);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+/*  block with product  */
+
+/* SocialMedia and short information*/
+
+.endbar{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 50;
+  height: 100px;
+  background: #3A3C42;
+  align-items: center
+  justify-content: center;
+  text-align: center;
+}

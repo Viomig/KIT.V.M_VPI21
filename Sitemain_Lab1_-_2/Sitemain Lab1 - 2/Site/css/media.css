@@ -1,0 +1,108 @@
+@media screen and (max-width: 760px) and (min-width: 200px){
+body{
+
+}
+header{
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.nav{
+margin-top: 20px;
+width: 150px;
+}
+
+.nav-list a{
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  z-index: 100;
+  display: inline-grid;
+  text-align: center;
+}
+.nav-list .animation{
+  position: absolute;
+  height: 50px;
+  top: 0;
+  z-index: 0;
+  background: #d0e6a5;
+  border-radius: 8px;
+  transition: all .5s ease 0s;
+}
+.nav-list a:nth-child(1){
+  height: 50px;
+}
+.nav-list .nachalo-Home,a:nth-child(1):hover~.animation{
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+.nav-list a:nth-child(2){
+  height: 50px;
+}
+.nav-list .nachalo-Menu,a:nth-child(2):hover~.animation{
+  height:50px;
+  top: 50px;
+  left: 0;
+}
+.nav-list a:nth-child(3){
+  height: 50px;
+}
+.nav-list .nachalo-About,a:nth-child(3):hover~.animation{
+  height: 50px;
+  top: 100px;
+  left: 0;
+}
+.nav-list a:nth-child(4){
+  height: 50px;
+}
+.nav-list .nachalo-Product,a:nth-child(4):hover~.animation{
+  height: 50px;
+  top: 150px;
+  left: 0;
+}
+.nav-list a:nth-child(5){
+  height: 50px;
+}
+.nav-list .nachalo-Contact,a:nth-child(5):hover~.animation{
+  height: 50px;
+  top: 200px;
+  left: 0;
+}
+.nav-list{
+  background: rgba(39,45,51,0.85);
+  text-align: justify;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 9px;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+.twohero{
+  display: flex;
+  flex-wrap: wrap;
+  background: #d0e6a5;
+}
+.hero{
+  width: 100%;
+  height: 100vh;
+  background: #342e37;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.hero-2{
+  width: 100%;
+  height: 20vh;
+  background: rgba(39,45,51,0.85);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
